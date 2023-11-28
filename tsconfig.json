@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*":["./src/*"]
+      "@/*":["./src/*"] //
   },
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -16,7 +16,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite/client"],
+    "types": ["vite/client"], //this will help to use .env.local without any problem
 
     /* Linting */
     "strict": true,
