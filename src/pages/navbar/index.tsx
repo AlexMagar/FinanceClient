@@ -1,11 +1,10 @@
 import FlexBetween from "@/components/FlexBetween"
-import { Box, Link, Typography, useTheme } from "@mui/material"
+import { Box, Typography, useTheme } from "@mui/material"
 import { useState } from "react"
 import PixIcon from '@mui/icons-material/Pix';
+import { Link } from "react-router-dom";
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
 
     const { palette } = useTheme()
     const [selected, setSelected] = useState("dashboard") //state what page we are on
@@ -19,19 +18,17 @@ const Navbar = (props: Props) => {
               Finanseer
             </Typography>
           </FlexBetween>
-
           {/* =============== Right Side =============  */}
           <FlexBetween gap="2rem">
             <Box sx={{"&:hover": {color: palette.primary[100]}}}>
               <Link 
-                to="/" 
-                onClick ={() => setSelected("dashboard")}
+                to="/"
+                onClick={()=> setSelected("dashboard")}
                 style={{
-                  color: selected === "dashboard" ? "inherit" : palette.grey[700],
-                  textDecoration: "inherit"
+                  color: selected === "dashboard" ? "inherit" : palette.grey[700]
                 }}
               >
-                Dashboard
+              Dashboard
               </Link>
             </Box>
             <Box sx={{"&:hover": {color: palette.primary[100]}}}>
@@ -43,7 +40,7 @@ const Navbar = (props: Props) => {
                   textDecoration: "inherit"
                 }}
               >
-                predictions
+                Predictions
               </Link>
             </Box>
           </FlexBetween>
