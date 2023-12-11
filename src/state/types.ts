@@ -21,7 +21,7 @@ export interface Day{
     expenses: number;
 }
 
-export interface GetKpiResponsive {
+export interface GetKpiResponse {
     id: string;
     _id: string;
     __v: number;
@@ -31,4 +31,16 @@ export interface GetKpiResponsive {
     expensesByCategory: ExpensesByCategory;
     monthlyData: Array<Month>;
     dailyData: Array<Day>;
+    createdAt: string;
+    updatedAt: string;
+}
+export interface GetProductsResponse {
+    id: string;
+    _id: string;
+    __v: number;
+    price: number;
+    expense: number;
+    transactions: Array<string>;
+    createdAt: string;
+    updatedAt: string;
 }
