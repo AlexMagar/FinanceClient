@@ -4,6 +4,7 @@ const Row3 = () => {
   
     const content = (
         <>
+            <DashboardBox gridArea="g">g</DashboardBox>
             <DashboardBox gridArea="h">h</DashboardBox>
             <DashboardBox gridArea="i">i</DashboardBox>
             <DashboardBox gridArea="j">j</DashboardBox>
