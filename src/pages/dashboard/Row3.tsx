@@ -185,6 +185,22 @@ const Row3 = () => {
                     // subtitle='Top line representes revenue, bottom line represent'
                     sideText='+15%'
                 />
+                <Box 
+                    height="15px"
+                    margin="1.25rem 1rem 0.4rem 1rem"
+                    bgcolor={palette.primary[800]}
+                    borderRadius="1rem"
+                >
+                    <Box
+                        height="15px"
+                        bgcolor={palette.primary[600]}
+                        borderRadius="1rem"
+                        width="40%"
+                    ></Box>
+                </Box>
+                <Typography margin="0 1rem" variant='h6'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est ad error sed eius aut fuga, fugit reprehenderit quibusdam modi ea dolorem ullam eveniet qui debitis tenetur soluta fugiat! Rerum.
+                </Typography>
             </DashboardBox>
         </>
     )
