@@ -10,9 +10,9 @@ const Navbar = () => {
     const [selected, setSelected] = useState("dashboard") //state what page we are on
 
     const content = (
-        <FlexBetween mb="o.25rem" p="o.5rem 0rem" color={palette.grey[300]} >
+        <FlexBetween mb="o.25rem" p="0.5rem 0rem" color={palette.grey[300]} >
           {/* ========== Left Side ========== */}
-          <FlexBetween gap="0.75rem">
+          <FlexBetween gap="0.75rem" >
             <PixIcon sx={{fontSize: "28px"}}/>
             <Typography variant="h4" fontSize="16px">
               Finanseer
